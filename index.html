@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Love Letters for Ananya 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background particles -->
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1>💕 For My Love - Ananya 💕</h1>
+            <ul class="nav-links">
+                <li><a href="#letters">Letters</a></li>
+                <li><a href="#surprise">Surprise</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#games">Games</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Good Morning, Ananya! 🌅</h2>
+            <p class="hindi-text">तुम मेरी जान हो</p>
+            <p class="english-text">(You are my life)</p>
+            <div id="morning-message" class="morning-message"></div>
+        </div>
+        <canvas id="confetti"></canvas>
+    </section>
+
+    <!-- Love Letters Section -->
+    <section id="letters" class="letters-section">
+        <h2>💌 My Love Letters for You</h2>
+        <div class="letters-container">
+            <!-- Letter 1 -->
+            <div class="letter-card">
+                <div class="letter-header">
+                    <span class="letter-emoji">💝</span>
+                    <h3>Letter 1: The Day We Met</h3>
+                </div>
+                <div class="letter-content hidden">
+                    <p>प्रिय अनन्या,</p>
+                    <p>मुझे अभी भी वह दिन याद है जब तुमने मेरी जिंदगी में प्रवेश किया। तुम्हारी मुस्कान ने मेरे दिल को छू गया।</p>
+                    <p>तुम मेरी दुनिया बदल गई हो। हर दिन तुम्हारे साथ एक नया जीवन शुरू होता है।</p>
+                    <p>I love you more than words can express! 💕</p>
+                </div>
+                <button class="reveal-btn" onclick="revealLetter(this)">💭 Click to Read</button>
+            </div>
+
+            <!-- Letter 2 -->
+            <div class="letter-card">
+                <div class="letter-header">
+                    <span class="letter-emoji">💌</span>
+                    <h3>Letter 2: Long Distance Love</h3>
+                </div>
+                <div class="letter-content hidden">
+                    <p>मेरी प्रिय अनन्या,</p>
+                    <p>दूरी हमें अलग करती है, लेकिन तुम्हारी यादें हमेशा मेरे साथ हैं। हर रात मैं तुम्हारे सपने देखता हूँ।</p>
+                    <p>तुम्हारी आवाज सुनना, तुम्हारी बातें करना - यह सब मेरे लिए सब कुछ है।</p>
+                    <p>Soon, my love. Soon we'll be together forever. 🫂💕</p>
+                </div>
+                <button class="reveal-btn" onclick="revealLetter(this)">💭 Click to Read</button>
+            </div>
+
+            <!-- Letter 3 -->
+            <div class="letter-card">
+                <div class="letter-header">
+                    <span class="letter-emoji">🌹</span>
+                    <h3>Letter 3: You Make Me Blush</h3>
+                </div>
+                <div class="letter-content hidden">
+                    <p>हे मेरे प्यार,</p>
+                    <p>तुम जब भी कुछ रोमांटिक कहती हो, मेरे गाल लाल हो जाते हैं। तुम्हारी हर बात मेरे दिल को छू जाती है।</p>
+                    <p>तुम्हारी हँसी मेरे जीवन की सबसे मधुर संगीत है।</p>
+                    <p>You are my everything, Ananya. My love, my life, my forever. 💗✨</p>
+                </div>
+                <button class="reveal-btn" onclick="revealLetter(this)">💭 Click to Read</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Morning Surprise Section -->
+    <section id="surprise" class="surprise-section">
+        <h2>🎉 Morning Surprise for You</h2>
+        <div class="surprise-box">
+            <div class="surprise-content">
+                <h3>✨ Special Message ✨</h3>
+                <p class="hindi-text">तुम्हारे लिए प्यार भरा सवेरा</p>
+                <p>A morning full of love for you, my beautiful Ananya!</p>
+                <div class="surprise-items">
+                    <div class="surprise-item">☕ Fresh Coffee/Tea</div>
+                    <div class="surprise-item">🍰 Your Favorite Cake</div>
+                    <div class="surprise-item">💐 Flowers for You</div>
+                    <div class="surprise-item">💌 Love Letters</div>
+                    <div class="surprise-item">🎵 Our Favorite Song</div>
+                </div>
+                <button class="btn-primary" onclick="celebrateSurprise()">🎊 Celebrate!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Stickers -->
+    <div id="stickers-container" class="stickers-container">
+        <div class="sticker">💕</div>
+        <div class="sticker">🌸</div>
+        <div class="sticker">💐</div>
+        <div class="sticker">🦋</div>
+        <div class="sticker">💋</div>
+        <div class="sticker">🌹</div>
+        <div class="sticker">✨</div>
+        <div class="sticker">💝</div>
+        <div class="sticker">👩‍❤️‍👩</div>
+        <div class="sticker">💑</div>
+    </div>
+
+    <!-- Music Player Section -->
+    <section id="music" class="music-section">
+        <h2>🎵 Music for Our Love 🎵</h2>
+        <div class="music-container">
+            <div class="player-card">
+                <h3>Romantic Playlist</h3>
+                <audio id="musicPlayer" controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="mood-selector">
+                    <button onclick="setMood('romantic')">💕 Romantic</button>
+                    <button onclick="setMood('peaceful')">🌸 Peaceful</button>
+                    <button onclick="setMood('energetic')">⚡ Energetic</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>📸 Our Memories ��</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <div class="gallery-placeholder">📷 Your Photo 1</div>
+                <p>Add your memories here!</p>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">📷 Your Photo 2</div>
+                <p>Beautiful moments together</p>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">📷 Your Photo 3</div>
+                <p>Forever in my heart</p>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">📷 Your Photo 4</div>
+                <p>Our love story</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games-section">
+        <h2>🎮 Love Games 🎮</h2>
+        <div class="games-container">
+            <div class="game-card">
+                <h3>💝 Love Quiz</h3>
+                <p>Test how well you know our love story!</p>
+                <button class="btn-primary" onclick="startQuiz()">Play Quiz</button>
+            </div>
+            <div class="game-card">
+                <h3>🎯 Memory Match</h3>
+                <p>Match the romantic emojis!</p>
+                <button class="btn-primary" onclick="startMemoryGame()">Play Game</button>
+            </div>
+            <div class="game-card">
+                <h3>🎲 Daily Compliments</h3>
+                <p>Get a random compliment!</p>
+                <button class="btn-primary" onclick="getCompliment()">Get Compliment</button>
+            </div>
+        </div>
+        <div id="compliment-box" class="compliment-box hidden"></div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <h2>⏱️ Countdown to Our Next Meeting ⏱️</h2>
+        <div class="countdown">
+            <div class="countdown-item">
+                <span id="days">0</span>
+                <p>Days</p>
+            </div>
+            <div class="countdown-item">
+                <span id="hours">0</span>
+                <p>Hours</p>
+            </div>
+            <div class="countdown-item">
+                <span id="minutes">0</span>
+                <p>Minutes</p>
+            </div>
+            <div class="countdown-item">
+                <span id="seconds">0</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with 💕 for the love of my life - Ananya</p>
+        <p class="hindi-text">तुम्हारा हमेशा, सदा के लिए ❤️</p>
+        <p class="english-text">Yours forever, always 🥰</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
